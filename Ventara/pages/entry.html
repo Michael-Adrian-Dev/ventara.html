@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/entry.css"> 
+  <title>Entry Page</title>
+</head>
+<body>
+  <!-- Loading animation -->
+  <div class="loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Video background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/back.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Welcome message -->
+  <div class="welcome-message">
+    <h1>Welcome to Our Website</h1>
+  </div>
+
+  <!-- Enter button -->
+  <div class="enter-button">
+    <a href="pages/home.html">Enter</a>
+  </div>
+
+  <!-- Script to hide loading animation after 3 seconds -->
+  <script>
+    setTimeout(function() {
+      document.querySelector('.loading').style.display = 'none';
+    }, 3000);
+  </script>
+</body>
+</html>

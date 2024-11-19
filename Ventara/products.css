@@ -1,0 +1,90 @@
+/* Common styles for all pages */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Style for links on hover */
+nav a:hover {
+  color: #3498db;
+}
+
+/* Car grid */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+/* CSS */
+.car-item {
+  background-color: #f9f9f9;
+  padding: 20px; /* Increase padding */
+  border-radius: 8px;
+  text-align: center; /* Center content */
+  width: 200px; /* Set a fixed width */
+  margin: 10px; /* Add margin between boxes */
+  margin-bottom: 20px; /* Adjust margin bottom to create space */
+  margin-right: 10px; /* Adjust margin right to create space */
+  display: inline-block; /* Display car boxes in a line */
+}
+
+.car-item img {
+  width: 100%;
+  max-height: 150px; /* Limit image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.car-item h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em; /* Adjust font size */
+}
+
+.car-item p {
+  margin: 5px 0;
+  font-size: 1em; /* Adjust font size */
+}
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid #00f;
+            border-top: 5px solid #fff;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .car-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .car-card img {
+            width: 100%;
+            height: auto;
+        }
+        .details {
+            padding: 15px;
+        }
+        .details h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .specs {
+            margin-top: 10px;
+            color: #555;
+        }
+        .price {
+            color: #d00;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="bmw-logo.png" alt="BMW Logo" class="logo">
+    <h1>BMW Car Collection</h1>
+</header>
+
+<div class="container">
+    <!-- Car 1 -->
+    <div class="car-card">
+        <img src="car1.jpg" alt="BMW 3 Series">
+        <div class="details">
+            <h3>BMW 3 Series</h3>
+            <p>Sporty sedan with agile handling.</p>
+            <div class="specs">Top Speed: 155 mph | Mileage: 30 mpg (12.7 km/l)</div>
+            <div class="price">$45,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 2 -->
+    <div class="car-card">
+        <img src="car2.jpg" alt="BMW 5 Series">
+        <div class="details">
+            <h3>BMW 5 Series</h3>
+            <p>Mid-size luxury sedan with advanced tech.</p>
+            <div class="specs">Top Speed: 155 mph | Mileage: 28 mpg (11.9 km/l)</div>
+            <div class="price">$55,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 3 -->
+    <div class="car-card">
+        <img src="car3.jpg" alt="BMW 7 Series">
+        <div class="details">
+            <h3>BMW 7 Series</h3>
+            <p>Flagship luxury sedan with ultimate comfort.</p>
+            <div class="specs">Top Speed: 155 mph | Mileage: 25 mpg (10.6 km/l)</div>
+            <div class="price">$90,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 4 -->
+    <div class="car-card">
+        <img src="car4.jpg" alt="BMW X3">
+        <div class="details">
+            <h3>BMW X3</h3>
+            <p>Compact luxury SUV with impressive performance.</p>
+            <div class="specs">Top Speed: 130 mph | Mileage: 29 mpg (12.3 km/l)</div>
+            <div class="price">$47,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 5 -->
+    <div class="car-card">
+        <img src="car5.jpg" alt="BMW X5">
+        <div class="details">
+            <h3>BMW X5</h3>
+            <p>Luxury SUV with versatility and power.</p>
+            <div class="specs">Top Speed: 155 mph | Mileage: 25 mpg (10.6 km/l)</div>
+            <div class="price">$65,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 6 -->
+    <div class="car-card">
+        <img src="car6.jpg" alt="BMW X7">
+        <div class="details">
+            <h3>BMW X7</h3>
+            <p>Large luxury SUV with premium features.</p>
+            <div class="specs">Top Speed: 155 mph | Mileage: 22 mpg (9.4 km/l)</div>
+            <div class="price">$75,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 7 -->
+    <div class="car-card">
+        <img src="car7.jpg" alt="BMW i4">
+        <div class="details">
+            <h3>BMW i4</h3>
+            <p>All-electric sedan with high performance.</p>
+            <div class="specs">Top Speed: 118 mph | Mileage: 300 miles per charge</div>
+            <div class="price">$55,000</div>
+        </div>
+    </div>
+    
+    <!-- Car 8 -->
+    <div class="car-card">
+        <img src="car8.jpg" alt="BMW iX">
+        <div class="details">
+            <h3>BMW iX</h3>
+            <p>All-electric SUV with futuristic design.</p>
+            <div class="specs">Top Speed: 124 mph | Mileage: 324 miles per charge</div>
+            <div class="price">$85,000</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

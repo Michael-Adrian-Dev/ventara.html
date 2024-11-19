@@ -1,0 +1,201 @@
+/* Common styles for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/contact.jpg'); /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    animation: fadeIn 2s; /* Add fading effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header img {
+    width: 100px; /* Adjust the width of the header logo */
+    height: 100px; /* Adjust the height of the header logo */
+    margin: 10px 20px; /* Add margin to the header logo */
+    float: left;/* Align logo to the left*/
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    background-size: contain; /* Adjust background size */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Updated to use flexbox */
+    justify-content: center; /* Center the links horizontally */
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with opacity */
+    border-radius: 10px; /* Add border radius for sections */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style for links on hover */
+nav a:hover {
+    color: #3498db;
+}
+
+/* Styles for Contact Page */
+
+.contact-info,
+.contact-form,
+.social-media {
+    margin-bottom: 30px;
+}
+
+.contact-info h2,
+.contact-form h2,
+.social-media h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+
+.contact-info ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li,
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a,
+.social-media a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #f9f9f9; /* Add background color for form */
+    padding: 20px; /* Add padding for form */
+    border-radius: 10px; /* Add border radius for form */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.contact-form h2 {
+    text-align: center; /* Center the heading */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Add background color for inputs */
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-media {
+    text-align: center; /* Center the social media links */
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center; /* Center the social media links horizontally */
+}
+
+.social-media li {
+    margin: 0 10px; /* Add spacing between social media icons */
+}
+
+.social-media img {
+    width: 30px; /* Adjust the width of the social media icons */
+    height: 30px; /* Adjust the height of the social media icons */
+    border-radius: 50%; /* Make the social media icons circular */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.social-media img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.social-media a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #0056b3;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: calc(100% - 20px);
+    }
+}
